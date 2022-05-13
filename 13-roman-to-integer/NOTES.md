@@ -10,6 +10,6 @@
 * Set the previous value to the current value in order to increment the result
 * Return the result
 
-Time Complexity: 0(n)
+  Time Complexity: 0(n)
 
-Space Complexity: 0(1)
+  Space Complexity: 0(1)
