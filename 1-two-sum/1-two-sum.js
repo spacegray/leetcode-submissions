@@ -1,16 +1,14 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
+# @param {Integer[]} nums
+# @param {Integer} target
+# @return {Integer[]}
 
-const twoSum = function(nums, target) {
-    const map = {};
-    const len = nums.length;
-    map[target - nums[0]] = 0;
-    for (let i = 1; i < len; i++) {
-        const n = nums[i];
-        if (n in map) return [map[n], i];
-         map[target-n] = i;
-}
-}
+def two_sum(nums, target)
+  hash = {}
+  nums.each_with_index do |num, index|
+    if hash[num]
+      return [hash[num], index]
+    else
+      hash[target - num] = index
+    end
+  end
+end
